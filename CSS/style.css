@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    /* background-color: rgb(243, 203, 210); */
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/18/01/46/hack-813290_640.jpg);
+    
+}
+.content{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0,0,0,15%);
+    display: none;
+}
+.typing-text{
+    text-align: justify;
+    word-break: break-all;
+    display: inline-block;
+}
+.typing-text span.active{
+    position: relative;
+    display: inline;
+}
+.typing-text span.correct{
+    color:green;
+}
+.typing-text span.incorrect{
+    color: red;
+}
+.typing-text span.active{
+    color:blue;
+    border-bottom: 2px solid blue;
+
+}
+/* .typing-text span.active::before{
+    position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  background: #17A2B8;
+  animation: blink 1s ease-in-out infinite; */
+
+
+.start-btn{
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start-btn button{
+    box-shadow: 2px 3px 3px rgba(0,0,0,15%);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor:pointer;
+    border-radius: 50px;
+    color:#4300fc;
+    transition: all .2s ease;
+}
+.start-btn button:hover{
+    background-color: #ff0000;
+    color: white;
+}
+.input-box{
+    border: none;
+    outline: none;
+    resize: none;
+}
+.time{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.time p{
+    display: flex;
+    align-items: center;
+    background-color: #404ecf;
+    border-radius: 50px;
+    color:white;
+    justify-content: flex-end;
+
+}
+.time p b{
+    background-color: white;
+    border-radius: 50px;
+    color: #c93b3b;
+}
+.result-box{
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.results{
+    background-color: white;
+    height: 300px;
+    margin: auto 0;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,15%);
+}
+.btns button{
+    padding: 7px 36px;
+    border: 1px solid #b58888;
+    background: #b58888;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all .2s ease;
+}
+.btns button:hover{
+    color: #b58888;
+    background-color: white;
+    border: 1px solid #b58888;
+}
